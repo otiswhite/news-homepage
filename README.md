@@ -8,6 +8,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 - CSS custom properties and CSS mobile menu
 - Flexbox
 - CSS Grid
+- SCSS
 - Mobile-first workflow
 - JS to stop scrolling in menu
 
