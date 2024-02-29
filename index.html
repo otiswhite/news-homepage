@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | News homepage</title>
+
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- header -->
+			<header>
+				<picture class="logo">
+					<img src="/assets/images/logo.svg" alt="logo" />
+				</picture>
+				<nav class="navbar">
+					<!-- mobile menu toggler -->
+					<div class="mobile-menu-toggler">
+						<input
+							class="navbar__hamburger__input"
+							type="checkbox"
+							id="input-hamburger"
+						/>
+						<label
+							class="navbar__hamburger__label"
+							for="input-hamburger"
+							aria-expanded="false"
+							aria-label="Mobile Navigation Button"
+						>
+							<span class="navbar__hamburger__label__bar"></span>
+							<span class="navbar__hamburger__label__bar"></span>
+							<span class="navbar__hamburger__label__bar"></span>
+						</label>
+						<div class="links-empty"></div>
+						<div class="links">
+							<a href="#">Home</a>
+							<a href="#">New</a>
+							<a href="#">Popular</a>
+							<a href="#">Trending</a>
+							<a href="#">Categories</a>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<main>
+				<!-- lead article section -->
+				<section class="lead-article">
+					<picture>
+						<source
+							media="(min-width: 700px)"
+							srcset="/assets/images/image-web-3-desktop.jpg"
+						/>
+						<img src="/assets/images/image-web-3-mobile.jpg" alt="" />
+					</picture>
+					<h1>The Bright Future of Web 3.0?</h1>
+					<p>
+						We dive into the next evolution of the web that claims to put the
+						power of the platforms back into the hands of the people. But is it
+						really fulfilling its promise?
+					</p>
+					<button><a href="#">Read more</a></button>
+				</section>
+
+				<!-- aside / new articles list section -->
+				<section class="new-articles">
+					<h2>New</h2>
+					<article class="">
+						<div class="title">Hydrogen VS Electric Cars</div>
+						<div class="desc">
+							Will hydrogen-fueled cars ever catch up to EVs?
+						</div>
+					</article>
+					<article class="">
+						<div class="title">The Downsides of AI Artistry</div>
+						<div class="desc">
+							What are the possible adverse effects of on-demand AI image
+							generation?
+						</div>
+					</article>
+					<article class="">
+						<div class="title">Is VC Funding Drying Up?</div>
+						<div class="desc last">
+							Private funding by VC firms is down 50% YOY. We take a look at
+							what that means.
+						</div>
+					</article>
+				</section>
+
+				<!-- bottom/ top articles list section -->
+				<section class="top-articles">
+					<article class="">
+						<div class="img">
+							<img src="/assets/images/image-retro-pcs.jpg" alt="" />
+						</div>
+						<div class="content">
+							<div class="no">01</div>
+							<div class="title">Reviving Retro PCs</div>
+							<div class="desc">
+								What happens when old PCs are given modern upgrades?
+							</div>
+						</div>
+					</article>
+					<article class="">
+						<div class="img">
+							<img src="/assets/images/image-top-laptops.jpg" alt="" />
+						</div>
+						<div class="content">
+							<div class="no">02</div>
+							<div class="title">Top 10 Laptops of 2022</div>
+							<div class="desc">
+								Our best picks for various needs and budgets.
+							</div>
+						</div>
+					</article>
+					<article class="">
+						<div class="img">
+							<img src="/assets/images/image-gaming-growth.jpg" alt="" />
+						</div>
+						<div class="content">
+							<div class="no">03</div>
+							<div class="title">The Growth of Gaming</div>
+							<div class="desc">
+								How the pandemic has sparked fresh opportunities.
+							</div>
+						</div>
+					</article>
+				</section>
+			</main>
+
+			<footer>
+				<div class="">
+					<img src="/assets/images/logo.svg" alt="logo" />
+				</div>
+				cr2024
+			</footer>
+		</div>
+
+		<script src="/js/app.js"></script>
+	</body>
+</html>

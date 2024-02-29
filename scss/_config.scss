@@ -1,0 +1,129 @@
+/* config starts */
+
+// FONT
+
+/* Set up Font for old browsers */
+@supports not (font-variation-settings: normal) {
+	@font-face {
+		font-family: Inter;
+		src: url("/assets/fonts/static/Inter-Regular.ttf");
+		font-weight: normal;
+	}
+	@font-face {
+		font-family: Inter;
+		src: url("/assets/fonts/static/Inter-Bold.ttf");
+		font-weight: bold;
+	}
+	@font-face {
+		font-family: Inter;
+		src: url("/assets/fonts/static/Inter-ExtraBold.ttf");
+		font-weight: extra-bold;
+	}
+
+	body {
+		font-family: Inter;
+	}
+}
+
+/* Set up Inter for modern browsers, all weights */
+@supports (font-variation-settings: normal) {
+	@font-face {
+		font-family: "Inter";
+		src: url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+				format("woff2 supports variations"),
+			url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+				format("woff2-variations");
+		font-weight: 100 900;
+		font-stretch: 25% 151%;
+	}
+
+	.super-bold {
+		font-weight: 1000;
+	}
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+// <slant>: Use a value from -10 to 0
+
+// .inter-<uniquifier> {
+//   font-family: "Inter", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+//   font-variation-settings:
+//     "slnt" 0;
+// }
+
+// COLORS
+
+:root {
+	--color-primary-soft-orange: hsl(35, 77%, 62%);
+	--color-primary-soft-red: hsl(5, 85%, 63%);
+	--color-neutral-off-white: hsl(36, 100%, 99%);
+	--color-neutral-grayish-blue: hsl(233, 8%, 79%);
+	--color-neutral-dark-grayish-blue: hsl(236, 13%, 42%);
+	--color-neutral-dark-blue: hsl(240, 100%, 5%);
+}
+
+// RESET
+
+/* reset start */
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol,
+li,
+a {
+	list-style: none;
+	text-decoration: none;
+	color: inherit;
+}
+
+a,
+li,
+button {
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	width: 100%;
+	min-height: 100vh;
+}
+
+/* reset end */
